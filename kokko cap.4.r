@@ -148,5 +148,4 @@ plot(x=dados$R, y=dados$optvals$seasons, type="l", lwd=2,
 plot(x=dados$R, y=dados$optvals$W, type="l", lwd=2,
      xlab="Male condition R", ylab = "Fitness")
 
-#eh sempre negocio pro macho investir tudo!!!
 #====================================================================
