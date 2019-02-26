@@ -162,7 +162,7 @@ plotRule = function(x, #matriz rule
   
   #arrumando a perfumaria do plot
   axis(side=1, at=(0:(maxt-1))/(maxt-1), labels=1:maxt)
-  axis(side=2, at=(0:maxc)/maxc, labels=0:maxc)
+  axis(side=2, at=(0:(maxc-1))/(maxc-1), labels=1:maxc)
   grid(nx=maxt, ny=maxc, col=lcol)
   box()
 }
@@ -177,8 +177,13 @@ ma = forageRule(dmin = 0, dmax=0, C = 0.4, f = 0.8)
 mb = forageRule(dmin = 0, dmax=0.01, C = 0.4, f = 0.8)
 mc = forageRule(dmin = 0.01, dmax=0.01, C = 0.4, f = 0.8)
 
-par(mfrow=c(3,1), cex.lab=1.5, mar=c(6,6,1,1), oma=c(0,0,2,0))
+png("kokko 5.6.png", width = 12, height=20, units="cm", res=600)
+
+par(mfrow=c(3,1), las=1,
+    cex.lab=2, cex.axis=1.5, mar=c(6,6,1,1), oma=c(0,0,2,0))
 plotRule(ma);mtext(text = "(A)", side=3, outer = FALSE, line = 1 ,adj=0)
 plotRule(mb);mtext(text = "(B)", side=3, outer = FALSE, line = 1 ,adj=0)
 plotRule(mc);mtext(text = "(C)", side=3, outer = FALSE, line = 1 ,adj=0)
+
+dev.off()
 #====================================================================
