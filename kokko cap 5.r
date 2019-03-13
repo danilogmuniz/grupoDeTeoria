@@ -4,7 +4,8 @@
 
 #Eu tentei traduzir o codigo da Kokko, mas acho que os truques de
 #vetorizacao sao diferentes o suficiente entre R e Matlab pra tornar
-#a traducao dificil pra quem nao soh sabe R.
+#a traducao dificil pra quem soh sabe R. Entao eu acabei escrevendo um codigo
+#que nao tem nada a ver com o da Kokko, mas que chega no mesmo resultado final.
 
 #A ideia principal do codigo eh que temos dois FORs, um de tempo, e um
 #de estados nutricionais. A cada tempo, e a cada estado, a gente calcula
